@@ -1,4 +1,4 @@
-### Why's the design ?
+# Why's the design ?
 
 ---
 我挺喜欢这几个词汇的，why 以及 design。
