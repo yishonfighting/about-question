@@ -26,9 +26,9 @@
 
 |分类|文章导航|
 | ----  | ---- |
-| 操作系统| |
+| 操作系统|[虚拟内存一二事](https://github.com/yishonfighting/why-design/blob/master/os/virtual_memory.md) |
 |网络||
-|编程语言||
+|编程语言|[【Go】http包的body为什么是ReadCloser类型](https://github.com/yishonfighting/why-design/blob/master/lang/read_closer.md)|
 |数据库||
 |工程思想||
 |开源项目||
