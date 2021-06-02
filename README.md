@@ -30,6 +30,7 @@
 |网络||
 |编程语言|[http包的body为什么是ReadCloser类型](https://github.com/yishonfighting/why-design/blob/master/lang/read_closer.md)|
 | | [Go与泛型](https://github.com/yishonfighting/why-design/blob/master/lang/go_generic.md)|
+| | [使用通信进行内存共享](https://github.com/yishonfighting/why-design/blob/master/lang/csp.md)|
 |数据库||
 |工程思想|[DDD的头脑风暴]|
 |开源项目||
