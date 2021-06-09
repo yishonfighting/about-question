@@ -27,7 +27,7 @@
 |分类|文章导航|
 | ----  | ---- |
 | 操作系统|[虚拟内存一二事](https://github.com/yishonfighting/why-design/blob/master/os/virtual_memory.md) |
-|网络||
+|网络|[TCP粘包](https://github.com/yishonfighting/why-design/blob/master/net/message_framing.md)|
 |编程语言|[http包的body为什么是ReadCloser类型](https://github.com/yishonfighting/why-design/blob/master/lang/read_closer.md)|
 | | [Go与泛型](https://github.com/yishonfighting/why-design/blob/master/lang/go_generic.md)|
 | | [使用通信进行内存共享](https://github.com/yishonfighting/why-design/blob/master/lang/csp.md)|
