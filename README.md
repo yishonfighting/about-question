@@ -19,6 +19,7 @@
 + 数据库
 + 工程思想
 + 开源项目
++ 架构设计
 
 ---
 
@@ -34,3 +35,4 @@
 |数据库||
 |工程思想|[DDD的头脑风暴]|
 |开源项目||
+|架构设计 |[我认为的高可用](https://github.com/yishonfighting/why-design/blob/master/arch/high_availability.md) | 
