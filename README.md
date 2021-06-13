@@ -35,6 +35,6 @@
 | | [使用通信进行内存共享](https://github.com/yishonfighting/why-design/blob/master/lang/csp.md)|
 |数据库||
 |工程思想|[DDD的头脑风暴]|
-| | [时间 & 项目管理] |
+| | [关于时间和项目管理] |
 |开源项目||
 |架构设计 |[我认为的高可用](https://github.com/yishonfighting/why-design/blob/master/arch/high_availability.md) | 
