@@ -33,3 +33,5 @@
 |工程思想|[DDD的头脑风暴] <br /> [我眼中的项目管理](https://github.com/yishonfighting/why-design/blob/master/manage/tapd.md) |
 |开源项目|[Kube -简析]() <br /> [Kube-apiserver]() <br />|
 |架构设计 |[我认为的高可用](https://github.com/yishonfighting/why-design/blob/master/arch/high_availability.md) <br /> [SLA简析](https://github.com/yishonfighting/why-design/blob/master/arch/sla.md)|
+
+
