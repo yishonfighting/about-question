@@ -402,10 +402,13 @@ func WithValue(parent Context, key, val interface{}) Context {
 2、暴露了多余的信息；
 3、 全局变量在多线程环境下使用锁，浪费CPU资源；
 但是它也有好的方面：提升了某些变量的作用域，保证了这些数据的生命周期。为了解决负面影响，很多语言出现了“不那么全局的全局变量”，就比如 针对“线程局部”、“包局部”的全局变量而出现的this ，匿名形式的 “闭包”。有一个说法就是：每一段程序都有很多外部变量（极度简单的函数略过），一旦有了外部变量，这段程序就不完整，不能独立运行，而为了让他们能运行，就要给所有的外部变量设置值，而这些值的集合就叫做Context。
+
 问题2 ： Context 接口为什么还要提供一个canceler，而不是自己提供cancel()方法呢？
 
 “取消“这一操作是非强制性的。调用方不应该关心、干涉被调用方的情况。被调用方的责任只会是决定怎么return，也就是说，调用方只需要发送“cancel”，被调用方收到信息之后进一步处理即可，所以Context接口并没有定义cancel方法。
 cancel 操作应该可以传递。cancel某个函数的时候，与之关联的其他函数应该也被cancel，也正是如此，Done()方法返回了一个只读的channel，所有的函数只需要监听此channel即可。
+
+
 问题3 ： 可取消的Context什么时候应该将context从当前节点中删除，也即是removeFromParent 设置为true？
 
 当removeFromParent 为true时，cancelCtx 会将当前节点中的context 从父节点 context中删除,而源码中，只有在调用WithCancel()的时候，也就是新创建一个可取消的context的时候，其返回的cancelFunc函数会传入true，当cancelFunc被调用到的时候，会该context从父节点中删除，不会影响其他子节点。当然，整个节点回收就很简单了，直接将c.children = nil就可以了。其实这个问题的答案也就很显而易见了，删除局部子节点，避免并发遍历、删除同一个map。
